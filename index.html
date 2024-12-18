@@ -6,19 +6,30 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="loginstyle.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
 
     <title>CodeMaster - Unlock Your Coding Potential</title>
 </head>
 <body>
     <header >
-        <nav>
-            <div class="logo">
-                <h1>CodeMaster.</h1>
-            </div>
+        <div class="logo">
+            <h1>CodeMaster.</h1>
+        </div>
+        <button class="menu-icon" id="menuToggle">
+            <!-- Hamburger icon -->
+            <!-- <span></span>
+            <span></span>
+            <span></span> -->
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+    </header>
+        <nav class="nav-menu" id="navMenu">
+            
             <div class="link">
-                <ul>
-                    <li><a  href="#home" class="">Home</a></li>
+                <ul id="menu">
+                    <li><a  href="#home" class="active">Home</a></li>
                     <li ><a href="#features">Features</a></li>
                     <li ><a href="#about">About</a></li>
                     <li ><a href="#testinomials">Testinomials</a></li>
@@ -29,13 +40,13 @@
             </div>
             <div class="cart"></div>
             <div class="login">
-                <button class="log-btn btn"><span>login</span></button>
+                <button id="openModal"  class="log-btn btn"><span>login</span></button>
                 <button class="signup btn"> <span>signup</span></button>
             </div>
         </nav>
-    </header>
+    <!-- </header> -->
     <main>
-        <section id="home">
+        <section id="home" >
             <div class="container">
                 <div class="content">
                     <h1>Master the Art of Coding with <span>CodeMaster!</span></h1>
@@ -46,7 +57,7 @@
                     </div>
                 </div>
                 <div class="image">
-                    <img src="image2.png" alt="image1">
+                    <img src="images/image2.png" alt="image2">
                 </div>
                 
             </div>
@@ -55,7 +66,7 @@
         <section id="features">
             <div class="container">
                 <div class="image">
-                    <img src="image1.png" alt="image2">
+                    <img src="images/image1.png" alt="image1">
                 </div>
                 <div>
                     <div class="heading">
@@ -103,7 +114,7 @@
         <section id="about">
             <div class="container">
                 <div class="image">
-                    <img src="image3.png" alt="image3">
+                    <img src="images/image3.png" alt="image3">
                 </div>
                 
                 <div class="content">
@@ -127,7 +138,7 @@
                         <p>"An absolute game-changer! CodeMaster helped me land my first developer job."</p>
                         <div class="author">
                             <div class="profile">
-                                <img src="" alt="profile1">
+                                <img src="images/profile1.jpg" alt="profile1">
                             </div>
                             <div class="profile-content">
                                 <div class="name">Sarah</div>
@@ -141,7 +152,7 @@
                         <p>I love the practical approach. The projects were fun and insightful.</p>
                         <div class="author">
                             <div class="profile">
-                                <img src="" alt="profile1">
+                                <img src="images/profile2.jpg" alt="profile1">
                             </div>
                             <div class="profile-content">
                                 <div class="name">Mark</div>
@@ -152,10 +163,13 @@
                 </div>
                 <div class="card">
                     <div class="card-content">
-                        <p>This eBook is perfect for beginners like me. Clear, concise, and actionable.</p>
+                        <div>
+                            <p>This eBook is perfect for beginners like me. Clear, concise, and actionable.</p>
+                        </div>
+                        
                         <div class="author">
                             <div class="profile">
-                                <img src="" alt="profile1">
+                                <img src="images/profile3.jpg" alt="profile1">
                             </div>
                             <div class="profile-content">
                                 <div class="name">Emily</div>
@@ -171,7 +185,8 @@
                 <div class="card">
                     <div class="card-content">
                         <h3>Basic</h3>
-                        <div class="price">$19</div>
+                        <div class="price">
+                            <strike>$29</strike>$19</div>
                         <ul>
                             <li>200-Page eBook</li>
                             <li>Step-by-Step Lessons</li>
@@ -187,14 +202,15 @@
                 <div class="card">
                     <div class="card-content">
                         <h3>Pro</h3>
-                        <div class="price">$29</div>
+                        <div class="price">
+                            <strike>$49</strike>$29</div>
                         <ul>
                             <li>200-Page eBook</li>
                             <li>Step-by-Step Lessons</li>
                             <li>Practical Projects</li>
                             <li>Expert Tips</li>
                             <li>Downloadable Resources</li>
-                            <li>1-on-1 Coaching</li>
+                            <!-- <li>1-on-1 Coaching</li> -->
                             <li>eBook + 1-Year Updates + Bonus Resources (Project Templates, Cheatsheets).</li>
                         </ul>
                         <button class="btn">Buy Now</button>
@@ -202,7 +218,7 @@
                 </div>
             </div>
             <div class="button">
-                <button class=" btn get-start">Get Started Today
+                <button  class=" btn get-start">Get Started Today
                     <i class="fa-solid fa-arrow-up-right-from-square"></i>
                 </button>
             </div>
@@ -255,20 +271,23 @@
             
         </section>
         <section id="final-cta">
-            <div class="heading">
-                <h2>Ready to Start Your Coding Journey?</h2>
-                <h4>Don't wait - your dream career in tech starts here!</h4>
+            <div class="container">
+                <div class="heading">
+                    <h2>Ready to Start Your Coding Journey?</h2>
+                    <h4>Don't wait - your dream career in tech starts here!</h4>
+                </div>
+                <div class="button">
+                    <button class="btn">Buy Now</button>
+                    <button class="btn">Download Sample Chapter </button>
+                </div>
             </div>
-            <div class="button">
-                <button>Buy Now</button>
-                <button>Download Sample Chapter </button>
-            </div>
+            
         </section>
     </main>
     <footer>
         <div class="footer">
             <div class="col-1">
-                <div class="logo"></div>
+                <div class="logo">CodeMaster.</div>
                 <div class="about">
                     <h5>About CodeMaster</h5>
                     <p>CodeMaster is your ultimate guide to mastering coding. Created by developers for aspiring developers, we aim to simplify learning and help you achieve your goals.</p>
@@ -276,19 +295,19 @@
             </div>
             <div class="col-2">
                 <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Features</a></li>
-                    <li><a href="">Pricing</a></li>
-                    <li><a href="">Testimonials</a></li>
-                    <li><a href="">FAQ</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#testinomials">Testinomials</a></li>
+                    <li><a href="#faq">FAQ</a></li>
                 </ul>
             </div>
             <div class="col-3">
                 <div class="social-links">
-                    <a href=""><i>Twitter</i></a>
-                    <a href=""><i>LinkedIn</i></a>
-                    <a href=""><i>Facebook</i></a>
-                    <a href=""><i>GitHub</i></a>
+                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-github"></i></a>
                 </div>
             </div>
             <div class="col-4">
@@ -306,9 +325,28 @@
             </div>
             
             <div>
-                <i class="fa-solid fa-arrow-up"></i>
+                <a href="#home"><i class="fa-solid fa-arrow-up"></i></a>
             </div>
         </div>
     </footer>
+
+    <!-- Modal -->
+  <div id="loginModal" class="modal">
+    <div class="modal-content">
+      <span id="closeModal" class="close-btn">&times;</span>
+      <h2>Login</h2>
+      <form>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="Enter your username" required>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+        
+        <button type="submit" class="submit-btn">Login</button>
+      </form>
+    </div>
+  </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
