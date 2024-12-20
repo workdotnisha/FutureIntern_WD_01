@@ -45,4 +45,11 @@ const navMenu = document.getElementById("navMenu");
 
 menuToggle.addEventListener("click", () => {
   navMenu.classList.toggle("active");
+  menuToggle.classList.toggle("close");
+  window.addEventListener("click", (e) => {
+    if (e.target !== menuToggle && e.target !== navMenu) {
+      navMenu.classList.remove("active");
+      menuToggle.classList.remove("close");
+    }
+  });
 });

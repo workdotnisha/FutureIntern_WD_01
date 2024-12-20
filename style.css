@@ -43,7 +43,7 @@ nav {
 nav .link {
     position: fixed;
     top: 4rem;
-    left: 30%;
+    left: 37%;
 }
 
 nav ul {
@@ -105,19 +105,34 @@ nav ul li a {
     margin: 0.2rem;
     transition: transform 0.3s, opacity 0.3s;
 }
+.menu-icon.close span:nth-child(1) {
+    transform: rotate(40deg);
+    margin-left: -3px;
+}
+.menu-icon.close span:nth-child(2) {
+    display: none;
+}
+.menu-icon.close span:nth-child(3) {
+    transform: rotate(-40deg);
+    margin-left: -5px;
+    margin-top: -7px;
+}
 
 button i {
     font-size: 2rem;
     color: #ffffff;
 }
 
+
 .nav-menu {
     display: none;
-    position: absolute;
-    top: 60px;
+    position: fixed;
+    top: 50px;
     left: 0;
+    margin-top: -0.2rem;
     width: 100%;
-    background-color: #FF7E5F;
+    height: 60vh;
+    background: linear-gradient(to top left, #C62368, #001220 50%, #E34C67);
     color: #fff;
     flex-direction: column;
     gap: 10px;
@@ -158,8 +173,8 @@ button i {
 
 .log-btn {
     position: absolute;
-    top: 32%;
-    left: 42%;
+    top: 55%;
+    left: 40%;
     margin: 2rem 0;
 }
 
@@ -171,8 +186,8 @@ button i {
     background-image: linear-gradient(to right, #C62368, #FF7E5F), radial-gradient(circle at top left, #C62368, #FF7E5F);
     background-origin: border-box;
     background-clip: content-box, border-box;
-    top: 40%;
-    left: 25%;
+    top: 72%;
+    left: 40%;
     margin: 2rem 0;
 }
 
