@@ -5,6 +5,12 @@
 ## Overview
 The Codemaster Landing Page is a visually appealing and responsive front-end project designed to promote a digital product named Codemaster. It is built using HTML, CSS, and JavaScript, providing a user-friendly interface with sections for Home, About, Features, Testimonials, Pricing, FAQs, a Call-to-Action (CTA), and a Footer.
 
+## Screenshot
+
+![Codemaster Landing Page](assets/images/landing-page.png)
+
+*Above: A preview of the Codemaster Landing Page.*
+
 ## Features
 - **Home Section**: A welcoming hero banner introducing the Codemaster product.
 - **About Section**: Highlights the purpose and unique selling points of Codemaster.
@@ -23,11 +29,11 @@ The Codemaster Landing Page is a visually appealing and responsive front-end pro
 ## Installation
 1. Clone this repository to your local machine:
    ```bash
-   git clone https://github.com/yourusername/codemaster-landing-page.git
+   git clone https://github.com/workdotnisha/FutureIntern_WD_01.git
    ```
 2. Navigate to the project directory:
    ```bash
-   cd codemaster-landing-page
+   cd FutureIntern_WD_01
    ```
 3. Open the `index.html` file in your browser to view the landing page.
 
