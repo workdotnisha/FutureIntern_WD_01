@@ -22,15 +22,17 @@ The Codemaster Landing Page is a visually appealing and responsive front-end pro
 
 ## Installation
 1. Clone this repository to your local machine:
+   ```bash
    git clone https://github.com/yourusername/codemaster-landing-page.git
-   
+   ```
 2. Navigate to the project directory:
+   ```bash
    cd codemaster-landing-page
-   
+   ```
 3. Open the `index.html` file in your browser to view the landing page.
 
 ## File Structure
-
+```
 Codemaster Landing Page
 |
 |-- index.html         # Main HTML file
