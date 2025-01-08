@@ -1,4 +1,4 @@
-#FutureIntern #WebDeveloper #Task01
+#WebDeveloper #Task01
 
 # Codemaster Landing Page
 
