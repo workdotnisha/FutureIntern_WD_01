@@ -26,17 +26,6 @@ The Codemaster Landing Page is a visually appealing and responsive front-end pro
 - **CSS3**: For styling and layout, including responsiveness.
 - **JavaScript**: For interactive elements like form validation and FAQ toggles.
 
-## Installation
-1. Clone this repository to your local machine:
-   ```bash
-   git clone https://github.com/workdotnisha/FutureIntern_WD_01.git
-   ```
-2. Navigate to the project directory:
-   ```bash
-   cd FutureIntern_WD_01
-   ```
-3. Open the `index.html` file in your browser to view the landing page.
-
 ## File Structure
 ```
 Codemaster Landing Page
